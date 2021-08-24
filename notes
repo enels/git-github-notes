@@ -28,3 +28,11 @@ for help info on how to use it
 
 git rm
 Removes a file from your tracked files i.e from your staging area. After doing this you have to commit the changes.
+NB: Any file that has been added to the staging area when removed using git rm cannot be recovered so for that reason
+git forces you to use the -f option to prevent you from removing the staged files.
+
+git rm --cached "file name"
+Removes a file from your staging area but keeps it in your working tree. This particularly use if you forgot to add a file to the
+gitignore file but already staged it. Files, directories and file-glob pattern can be passed to the command.
+
+
