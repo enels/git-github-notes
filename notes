@@ -1,0 +1,24 @@
+git status -s
+gives you a more concise version of the status command
+A - files that on the staged area
+M - files that have been modified
+?? - files that are not been tracked
+
+git diff
+allows you view changes that have been made(the way it is in your working directory) but not yet staged
+
+git diff --staged
+allows you to view changes that are on the staging area that are yet to be committed
+
+git diff --cached
+displays what have been staged so far (--staged and --cached are synonyms)
+
+git difftool
+displays the unstaged changes with the stagged ones using a GUI tool
+git difftool --tool=emerge
+chooses the GUI tool to use
+git difftool --tool-help
+for help info on how to use it
+
+git rm
+Removes a file from your tracked files i.e from your staging area. After doing this you have to commit the changes.
