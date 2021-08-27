@@ -38,6 +38,9 @@ gitignore file but already staged it. Files, directories and file-glob pattern c
 git log
 Displays all the git commit and their commit SHA-1, author, date, commit message and file
 
+git log -w
+ignores white spaces
+
 git log --oneline
 lists one command per line, shows the first 7 characters of the commit's SHA and lastly shows commit's message
 
