@@ -66,4 +66,29 @@ In summary
 - it displays the files that have been modified
 - it displays the location of the lines that have been added/removed
 - it displays the actual changes that have been made.
+A commit hash can be added to this command
 https://git-scm.com/docs/git-diff#_generating_patches_with_p
+
+git show
+This also shows a specific commit like. This only shows the most recent commit
+
+git show "commit hash"
+The git show command will show only one commit. So don't get alarmed when you can't find any other commits - it only shows one. The output of the git show command is exactly the same as the git log -p command. So by default, git show displays:
+
+    the commit
+    the author
+    the date
+    the commit message
+    the patch information
+
+However, git show can be combined with most of the other flags we've looked at:
+
+    --stat - to show the how many files were changed and the number of lines that were added/removed
+    -p or --patch - this the default, but if --stat is used, the patch won't display, so pass -p to add it again
+    -w - to ignore changes to whitespace
+
+.gitignore
+https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ignoring-Files
+https://git-scm.com/docs/gitignore#_pattern_format
+https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+https://www.toptal.com/developers/gitignore
