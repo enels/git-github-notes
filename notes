@@ -145,3 +145,7 @@ It's important to understand how this command works. Running this command will:
 git branch -d sidebar
 This deletes a branch.
 NB: You can't delete a branch you are currently on. So to delete a branch e.g the sidebar, you must switch to another branch e.g the master or create and switch to a new branch.
+
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+https://learngitbranching.js.org/
+https://www.atlassian.com/git/tutorials/using-branches
