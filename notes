@@ -108,6 +108,7 @@ nnotated tags are recommended because they include a lot of extra information su
     a message for the tag
 without the -a flag, it's non-annotated
 git tag
+A tag is a permanent pointer to a commit in a repository
 for verifying taggings. lists out the various tags 
 
 git log --decorate
@@ -118,3 +119,5 @@ Deletes a tag.
 
 git tag -a v1.0 "commit hash"
 Adds a tag to a past commit.
+https://git-scm.com/book/en/v2/Git-Basics-Tagging
+https://git-scm.com/docs/git-tag
