@@ -35,4 +35,30 @@ git rm --cached "file name"
 Removes or deletes a file from your staging area but keeps it in your working tree. This particularly use if you forgot to add a file to the
 gitignore file but already staged it. Files, directories and file-glob pattern can be passed to the command.
 
+git log
+git log --oneline
+lists one command per line, shows the first 7 characters of the commit's SHA and lastly shows commit's message
 
+git log --stat
+lists the files that have been changed in the commit, as well as the number of lines that have been added or deleted(stat for statistics).
+also it list the number of files that have been modified/deleted
+
+git log --patch or -p
+This can be used to display the actual changes that has been made to a file.
+The description of each line that is printed out is shown below:
+
+    🔵 - the file that is being displayed
+    🔶 - the hash of the first version of the file and the hash of the second version of the file
+        not usually important, so it's safe to ignore
+    ❤️ - the old version and current version of the file
+    🔍 - the lines where the file is added and how many lines there are
+        -15,83 indicates that the old version (represented by the -) started at line 15 and that the file had 83 lines
+        +15,85 indicates that the current version (represented by the +) starts at line 15 and that there are now 85 lines...these 85 lines are shown in the patch below
+    ✏️ - the actual changes made in the commit
+        lines that are red and start with a minus (-) were in the original version of the file but have been removed by the commit
+        lines that are green and start with a plus (+) are new lines that have been added in the commit 
+In summary
+- it displays the files that have been modified
+- it displays the location of the lines that have been added/removed
+- it displays the actual changes that have been made.
+https://git-scm.com/docs/git-diff#_generating_patches_with_p
