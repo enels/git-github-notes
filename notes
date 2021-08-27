@@ -98,3 +98,14 @@ https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#Ig
 https://git-scm.com/docs/gitignore#_pattern_format
 https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 https://www.toptal.com/developers/gitignore
+
+git tag -a v1.0
+git tag is used for labelling or tagginng the current version of the project you are working on. git tag -a v1.0 is called an annotated tagging.
+nnotated tags are recommended because they include a lot of extra information such as:
+
+    the person who made the tag
+    the date the tag was made
+    a message for the tag
+without the -a flag, it's non-annotated
+git tag
+for verifying taggings. lists out the various tags 
