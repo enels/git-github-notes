@@ -17,7 +17,7 @@ This command displays:
     the files that have been modified
     the location of the lines that have been added/removed
     the actual changes that have been made
-
+https://git-scm.com/docs/git-diff
 
 git diff --staged
 allows you to view changes that are on the staging area that are yet to be committed
