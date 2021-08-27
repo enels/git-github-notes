@@ -121,3 +121,12 @@ git tag -a v1.0 "commit hash"
 Adds a tag to a past commit.
 https://git-scm.com/book/en/v2/Git-Basics-Tagging
 https://git-scm.com/docs/git-tag
+
+git branch
+This is used to interact with Git's branches
+It can be used to:
+
+    list all branch names in the repository
+    create new branches
+    delete branches
+The command git branch lists out the branches in the repository
