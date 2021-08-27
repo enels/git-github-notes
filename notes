@@ -36,6 +36,8 @@ Removes or deletes a file from your staging area but keeps it in your working tr
 gitignore file but already staged it. Files, directories and file-glob pattern can be passed to the command.
 
 git log
+Displays all the git commit and their commit SHA-1, author, date, commit message and file
+
 git log --oneline
 lists one command per line, shows the first 7 characters of the commit's SHA and lastly shows commit's message
 
