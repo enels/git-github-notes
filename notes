@@ -12,6 +12,12 @@ M - files that have been modified
 
 git diff
 allows you view changes that have been made(the way it is in your working directory) but not yet staged
+This command displays:
+
+    the files that have been modified
+    the location of the lines that have been added/removed
+    the actual changes that have been made
+
 
 git diff --staged
 allows you to view changes that are on the staging area that are yet to be committed
