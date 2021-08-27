@@ -112,3 +112,6 @@ for verifying taggings. lists out the various tags
 
 git log --decorate
 this include more info to the log output e.g the tag. This is almost equivalent to git log these days.
+
+git tag -d v1.0
+Deletes a tag.
