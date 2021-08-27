@@ -130,3 +130,6 @@ It can be used to:
     create new branches
     delete branches
 The command git branch lists out the branches in the repository
+
+git branch sidebar
+To create a branch, all you have to do is use git branch and provide it the name of the branch you want it to create.
