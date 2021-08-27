@@ -109,3 +109,6 @@ nnotated tags are recommended because they include a lot of extra information su
 without the -a flag, it's non-annotated
 git tag
 for verifying taggings. lists out the various tags 
+
+git log --decorate
+this include more info to the log output e.g the tag. This is almost equivalent to git log these days.
