@@ -115,3 +115,6 @@ this include more info to the log output e.g the tag. This is almost equivalent 
 
 git tag -d v1.0
 Deletes a tag.
+
+git tag -a v1.0 "commit hash"
+Adds a tag to a past commit.
