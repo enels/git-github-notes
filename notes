@@ -4,6 +4,12 @@ git config --global user.email=
 git config --global core.editor=
 All the commands are configuration settings
 
+git init
+Initializes a git repository
+https://www.atlassian.com/git/tutorials/setting-up-a-repository
+https://git-scm.com/docs/git-init
+https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository#Initializing-a-Repository-in-an-Existing-Directory
+
 git status -s
 gives you a more concise version of the status command
 A - files that on the staged area
