@@ -163,3 +163,6 @@ NB: When changes are made to a file under a branch and a commit to that file is 
 git checkout -b 'new branch name' 'commit to start from'
 git checkout -b footer master
 creates a branch called footer from the commit that master is pointing to and then checks out to the newly created branch.
+
+git log --oneline --graph --all
+Displays all branches at once.
