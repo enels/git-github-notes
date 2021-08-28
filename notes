@@ -212,3 +212,6 @@ This command:
 
     will undo the changes that were made by the provided commit
     creates a new commit to record the change
+
+https://www.atlassian.com/git/tutorials/undoing-changes
+https://git-scm.com/docs/git-revert
