@@ -223,3 +223,82 @@ Reflogging links
 http://gitready.com/intermediate/2009/02/09/reflog-your-safety-net.html
 https://www.atlassian.com/git/tutorials/rewriting-history
 https://git-scm.com/docs/git-reflog
+
+Relative commit references
+There are special characters called "Ancestry References" that we can use to tell Git about these relative references. Those characters are:
+
+    ^ – indicates the parent commit
+    ~ – indicates the first parent commit
+
+Here's how we can refer to previous commits:
+
+    the parent commit – the following indicate the parent commit of the current commit
+        HEAD^
+        HEAD~
+        HEAD~1
+    the grandparent commit – the following indicate the grandparent commit of the current commit
+        HEAD^^
+        HEAD~2
+    the great-grandparent commit – the following indicate the great-grandparent commit of the current commit
+        HEAD^^^
+        HEAD~3
+HEAD^^^2 grandparent(HEAD^^) second parent(^2)
+To illustrate it use the below git log result
+* 9ec05ca (HEAD -> master) Revert "Set page heading to "Quests & Crusades""
+* db7e87a Set page heading to "Quests & Crusades"
+*   796ddb0 Merge branch 'heading-update'
+|\  
+| * 4c9749e (heading-update) Set page heading to "Crusade"
+* | 0c5975a Set page heading to "Quest"
+|/  
+*   1a56a81 Merge branch 'sidebar'
+|\  
+| * f69811c (sidebar) Update sidebar with favorite movie
+| * e6c65a6 Add new sidebar content
+* | e014d91 (footer) Add links to social media
+* | 209752a Improve site heading for SEO
+* | 3772ab1 Set background color for page
+|/  
+* 5bfe5e7 Add starting HTML structure
+* 6fa5f34 Add .gitignore file
+* a879849 Add header to blog
+* 94de470 Initial commit
+
+
+    HEAD^ is the db7e87a commit
+    HEAD~1 is also the db7e87a commit
+    HEAD^^ is the 796ddb0 commit
+    HEAD~2 is also the 796ddb0 commit
+    HEAD^^^ is the 0c5975a commit
+    HEAD~3 is also the 0c5975a commit
+    HEAD^^^2 is the 4c9749e commit (this is the grandparent's (HEAD^^) second parent (^2))
+The git reset command
+git reset <reference-to-commit>
+It can be used to:
+
+    move the HEAD and current branch pointer to the referenced commit
+    erase commits
+    move committed changes to the staging index
+    unstage committed changes
+
+Git reset flag
+The way that Git determines if it erases, stages previously committed changes, or unstages previously committed changes is by the flag that's used. The flags are:
+
+    --mixed
+    --soft
+    --hard
+git reset --mixed <reference-to-commit> is the default when no flag is indicated. The commit is sent to the working directory
+git reset --soft moves it to the staging area.
+git reset --hard moves the commit to the trash
+
+It's always a good practice to create a backup before isuing the git --reset command. To do it simply create a branch and call it backup
+git branch backup
+To revert back to the previous one, say from the master branch (whose commit it was point to was deleted), simply just remove uncommitted changes and then merge in the backup branch.
+The merging will move (fast-forwrad) the master branch to the backup branch.
+NB: To remove uncommitted changes from the working directory use
+git checkout -- filename
+
+links to git reset
+https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection#Ancestry-References
+https://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified
+https://git-scm.com/docs/git-reset
