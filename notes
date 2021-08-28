@@ -204,3 +204,11 @@ https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#Basic-M
 Changing the last commit
 git commit --amend
 This helps you to change the last commit message from a typo or misspelling or something. You can also use it to add forgotten files to a commit.
+
+Reverting a commit
+When you tell Git to revert a specific commit, Git takes the changes that were made in commit and does the exact opposite of them. It can be done using:
+git revert <SHA-of-commit-to-reset>
+This command:
+
+    will undo the changes that were made by the provided commit
+    creates a new commit to record the change
