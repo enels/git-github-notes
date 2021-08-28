@@ -188,3 +188,13 @@ links to merging
 https://www.atlassian.com/git/tutorials/using-branches/git-merge
 https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#Basic-Merging
 https://git-scm.com/docs/git-merge
+
+Merge Conflict
+Git tracks lines in files. A merge conflict will happen when the exact same line(s) are changed in separate branches. A merge conflict occurs when Git isn't sure which line(s) you want to use from the branches that are being merged.
+To resolve a merge conflict do the following:
+
+    locate and remove all lines with merge conflict indicators
+    determine what to keep
+    save the file(s)
+    stage the file(s)
+    make a commit
