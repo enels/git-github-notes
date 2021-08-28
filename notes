@@ -182,3 +182,4 @@ When a merge happens, Git will:
     makes a commit to record the merge
 Note again, When we merge, we're merging some other branch into the current (checked-out) branch. We're not merging two branches into a new branch. We're not merging the current branch into the other branch.
 
+Note that duing a divergent merge, a commit is usually made and you're prompted to type in a commit message but, it's usually just adviceable to use the default message
