@@ -198,3 +198,5 @@ To resolve a merge conflict do the following:
     save the file(s)
     stage the file(s)
     make a commit
+https://git-scm.com/docs/git-merge#_how_conflicts_are_presented
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#Basic-Merge-Conflicts 
