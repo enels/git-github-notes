@@ -215,3 +215,6 @@ This command:
 
 https://www.atlassian.com/git/tutorials/undoing-changes
 https://git-scm.com/docs/git-revert
+
+Resetting a commit
+Resetting a commit erease the commit and it's content from the repository. To alleviate this stress a bit, Git does keep track of everything for about 30 days before it completely deletes anything. To access this content, you will use the command git reflog.
