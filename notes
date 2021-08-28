@@ -140,6 +140,7 @@ The command git branch lists out the branches in the repository
 git branch sidebar
 To create a branch, all you have to do is use git branch and provide it the name of the branch you want it to create.
 
+git checkout 'branch to switch to'
 git checkout sidebar
 This is used to switch between branches
 It's important to understand how this command works. Running this command will:
@@ -148,6 +149,7 @@ It's important to understand how this command works. Running this command will:
         (files that Git tracks are stored in the repository, so nothing is lost)
     go into the repository and pull out all of the files and directories of the commit that the branch points to 
 
+git branch -d 'branch to delete'
 git branch -d sidebar
 This deletes a branch.
 NB: You can't delete a branch you are currently on. So to delete a branch e.g the sidebar, you must switch to another branch e.g the master or create and switch to a new branch.
@@ -158,5 +160,6 @@ https://www.atlassian.com/git/tutorials/using-branches
 
 NB: When changes are made to a file under a branch and a commit to that file is made on another branch, git will show you the commit on the branch that it was made not the branch that the changes were made.
 
+git checkout -b 'new branch name' 'commit to start from'
 git checkout -b footer master
 creates a branch called footer from the commit that master is pointing to and then checks out to the newly created branch.
