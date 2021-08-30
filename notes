@@ -1,7 +1,13 @@
 git config --list
-git config --global user.name=
-git config --global user.email=
-git config --global core.editor=
+git config --global user.name "user name"
+git config --global user.email "email"
+git config --global core.editor "editor name"
+git config --global init.defaultBranch "main or master"
+
+Getting help
+git help <verb>
+git <verb> --help
+man git-<verb>
 All the commands are configuration settings
 
 git init
