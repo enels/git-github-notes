@@ -325,3 +325,13 @@ https://git-scm.com/docs/git-reset
 More resources
 https://dotfiles.github.io/
 https://github.com/jlord/git-it-electron
+
+viewing commit history
+git log -p or -patch
+shows the difference introduce in each commit.
+it can be controlled by using a number at the end git lot -p or -patch -2 (prints the last 2 commits)
+
+git log --pretty=oneline
+prints out the same output as the oneline option but with a better oupt and more options to change the format
+git log --pretty="%h - %n, %ar : %s"
+check git book for description of output
