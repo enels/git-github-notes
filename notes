@@ -338,7 +338,7 @@ git book page 42 and 43
 
 git shortlog -s
 shows the number of commits per author or developer or contributor has made to a repo.
-git shortlog -all
+git shortlog -all OR git log  --pretty=oneline |wc -
 prints result calculated in all branches
 
 git rev-list --count <revision number>
