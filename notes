@@ -346,3 +346,7 @@ get count for the commits up to that revision number(inclusive)
 git rev-list --all --count
 get commit count across all branches
 https://git-scm.com/docs/pretty-formats
+
+limiting commits:
+git log --pretty=oneline --author="author's name"
+git book page 44
