@@ -350,3 +350,7 @@ https://git-scm.com/docs/pretty-formats
 limiting commits:
 git log --pretty=oneline --author="author's name"
 git book page 44
+
+git log -S funtion_name
+git log -- path/to/file
+git book page 44
