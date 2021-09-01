@@ -10,6 +10,19 @@ git <verb> --help
 man git-<verb>
 All the commands are configuration settings
 
+creating a repo for the first time
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/enels/mongodbuni.git
+git push -u origin main
+
+pushing an existing repo from the command line
+it remote add origin https://github.com/enels/mongodbuni.git
+git branch -M main
+git push -u origin main
+
 git init
 Initializes a git repository
 https://www.atlassian.com/git/tutorials/setting-up-a-repository
