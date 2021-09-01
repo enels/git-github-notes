@@ -340,3 +340,8 @@ git shortlog -s
 shows the number of commits per author or developer or contributor has made to a repo.
 git shortlog -all
 prints result calculated in all branches
+
+git rev-list --count <revision number>
+get count for the commits up to that revision number(inclusive)
+git rev-list --all --count
+get commit count across all branches
