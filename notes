@@ -334,4 +334,4 @@ it can be controlled by using a number at the end git lot -p or -patch -2 (print
 git log --pretty=oneline
 prints out the same output as the oneline option but with a better oupt and more options to change the format
 git log --pretty="%h - %n, %ar : %s"
-check git book for description of output
+git book page 42 and 43
