@@ -335,3 +335,8 @@ git log --pretty=oneline
 prints out the same output as the oneline option but with a better oupt and more options to change the format
 git log --pretty="%h - %n, %ar : %s"
 git book page 42 and 43
+
+git shortlog -s
+shows the number of commits per author or developer or contributor has made to a repo.
+git shortlog -all
+prints result calculated in all branches
